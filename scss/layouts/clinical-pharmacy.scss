@@ -1,0 +1,35 @@
+.clinical-pharmacy-section {
+    padding: 100px 0px;
+    margin-bottom: 100px;
+    .inner-container {
+        .pharmacy-intro {
+            h1 {
+                margin-bottom: 35px;
+            }
+            p {
+                margin-bottom: 65px;
+            }
+            .agency-portal {
+                button {
+                    display: grid;
+                    grid-template-columns: 1fr 90px;
+                    align-items: center;
+                    justify-items: center;
+                    width: 407px;
+                    font-size: 18px;
+                    background-color: $primary-color;
+                    
+                    a {
+                        background-color: $input-bg;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(-50%, -50%);  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

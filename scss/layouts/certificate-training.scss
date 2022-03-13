@@ -1,0 +1,75 @@
+.certificate-training-section {
+    // background-color: $banner-bg-color;
+    background-image: url("../images/training-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+    // height: 833px;
+    .inner-container {
+        .certificate-training-content {
+            display: grid;
+            grid-template-columns:520px 1fr;
+            grid-gap: 35px;
+            .training-detail {
+                h1 {
+                    margin-bottom: 25px;
+                }
+                p {
+                    margin-bottom: 80px;
+                }
+                button {
+                    width: 381px;
+                    background-color: $primary-color;
+                    display: grid;
+                    grid-template-columns: 1fr 90px;
+                    align-items: center;
+                    a {
+                        background-color: #6d3479;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+            .certificate-detail {
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 940px;
+                    position: absolute;
+                    top: -207px;
+                }
+                .professional-box {
+                    img {
+                        width: 299px;
+                        height: 230px;
+                        position: absolute;
+                        left: 47%;
+                        top: -21%;
+                    }
+                }
+                .associate-box {
+                    img {
+                        width: 298px;
+                        height: 230px;
+                        position: absolute;
+                        top: 18%;
+                        left: 12%;
+                    }
+                }
+                .foundation-box {
+                    img {
+                        position: absolute;
+                        width: 284px;
+                        height: 230px;
+                        top: 68%;
+                        left: -3%;
+                    }
+                }
+            }
+        }
+    }
+}

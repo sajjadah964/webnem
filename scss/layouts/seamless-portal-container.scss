@@ -1,0 +1,31 @@
+.seamless-portal-container {
+  .seamless-portal-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 32px;
+    .seamless-portal-detail {
+        h1 {
+          margin-bottom: 30px;  
+        }
+        p {
+            margin-bottom: 60px;
+        }
+      button {
+        width: 441px;
+        display: grid;
+        grid-template-columns: 1fr 90px;
+        align-items: center;
+        background-color: $login-btn-color;
+        a {
+          background-color: $agency-btn-color;
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}

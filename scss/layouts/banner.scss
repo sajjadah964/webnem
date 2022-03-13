@@ -1,0 +1,195 @@
+.banner {
+  background-color: $banner-bg-color;
+  height: 735px;
+  position: relative;
+  img.curve-img {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+  }
+  nav {
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        width: 205px;
+        height: 50px;
+        align-self: center;
+        a {
+          display: block;
+          width: 205px;
+          height: 50px;
+          text-indent: -90000;
+          background-image: url("../images/logo.png");
+          background-size: cover;
+        }
+      }
+      .main-menu {
+        li {
+          display: inline-block;
+          position: relative;
+          margin-right: 36px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover .inner-menu {
+            display: block;
+            position: absolute;
+            background: $white-color;
+            width: 150px;
+            border-radius: 7px;
+            border: 1px solid $postal-field-color;
+          }
+          i {
+            padding-left: 7px;
+          }
+          ul.inner-menu {
+            display: none;
+            li {
+              position: relative;
+              display: block;
+              line-height: 40px;
+              text-align: center;
+              margin-right: 0;
+              a {
+                &:hover {
+                  background-color: $postal-field-color;
+                  border-radius: 7px;
+                  color: $menu-hover;
+                }
+              }
+            }
+          }
+          a {
+            color: $dark-color;
+            display: block;
+            font-size: 16px;
+            &:hover {
+              color: $menu-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+  .patient-centric-approach {
+    padding: 150px 0px 65px 0px;
+    .inner-container {
+      .banner-content {
+        max-width: 630px;
+        h1 {
+          margin-bottom: 35px;
+        }
+        p {
+          line-height: 27px;
+        }
+      }
+    }
+  }
+  .banner-bg {
+    width: 46%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: 950px;
+    }
+  }
+  .banner-btn {
+    button {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      align-items: center;
+      height: 90px;
+      border-radius: 20px;
+      color: $white-color;
+      text-transform: uppercase;
+      font-size: 18px;
+      cursor: pointer;
+      a {
+        
+        i {
+          color: $white-color;
+          position: absolute;
+          top: 50%;
+          font-size: 24px;
+          transform: translate(-50%, -50%);
+        }
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    .individual-btn {
+      width: 243px;
+      background-color: $primary-color;
+      margin-right: 30px;
+      a {
+        background: $input-bg;
+      }
+    }
+    .agency-btn {
+      width: 315px;
+      background-color: $login-btn-color;
+      a {
+        background-color: $agency-btn-color;
+      }
+    }
+    .btn-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      position: absolute;
+      top: 5px;
+    }
+  }
+}
+.navigation-btn {
+  .inner-container {
+    button {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      i {
+        font-size: 22px;
+      }
+    }
+    .prev-btn {
+      background: $banner-bg-color;
+      margin-right: 30px;
+      i {
+        color: $agency-btn-color;
+      }
+    }
+    .next-btn {
+      background-color: $login-btn-color;
+      i {
+        color: $white-color;
+      }
+    }
+    .navigation-btn-grid {
+      position: absolute;
+      top: 180px;
+    }
+  }
+}
+nav.fix-menu {
+  position: fixed;
+  max-width: 1920px;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+}
+nav.active {
+  transition: background-color 200ms linear;
+  background-color: #fff;
+  top: 0;
+}
+.position-relative {
+  position: relative;
+}

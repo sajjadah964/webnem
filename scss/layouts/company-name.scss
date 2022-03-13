@@ -1,0 +1,37 @@
+.company-name-section {
+    padding:160px  0px 97px 0px;
+    .inner-container {
+        .company-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding: 0px 45px;
+            align-items: end;
+            .single-detail {
+                text-align: center;
+                p {
+                    text-align: center;
+                }
+                h3 {
+                    color: $login-btn-color;
+                    margin-bottom: 45px;
+                }
+                img {
+                    margin-bottom: 30px;
+                }
+                .pb-20 {
+                    padding-bottom: 27px;
+                }
+                .mb-55 {
+                    margin-bottom: 55px;
+                }
+                .mb-46 {
+                    margin-bottom: 46px;
+                }
+            }
+            .align-start {
+                align-self: start;
+            }
+        }
+    }
+}
