@@ -21,3 +21,8 @@ $(document).ready(function() {
         $('#'+tagid).addClass("active");
     })
 })
+$(document).ready(function(){
+    $('#open-menu').click(function(){
+       $('#myLinks').slideToggle();
+    });
+     });

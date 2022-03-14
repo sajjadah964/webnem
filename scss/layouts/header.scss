@@ -8,10 +8,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width:320px ) and (max-width:767px) {
+      padding: 0px 10px;
+    }
     .social-icon {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 22px;
+      @media screen and (min-width:320px ) and (max-width:767px) {
+        grid-template-columns: 13px 13px 13px;
+        grid-gap: 8px;
+      }
      a {
         i {
             color: $social-icon-color;
@@ -31,6 +38,9 @@ header {
       display: grid;
       grid-template-columns: 1fr 1fr auto;
       grid-gap: 10px;
+      @media screen and (min-width:320px ) and (max-width:767px) {
+        grid-gap: 5px;
+      }
       button {
         width: 90px;
         height: 50px;
@@ -39,6 +49,9 @@ header {
         border-radius: 0;
         font-size: 14px;
         font-weight: 400;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          width: 80px;
+         }
       }
       .search-box {
         height: 50px;
